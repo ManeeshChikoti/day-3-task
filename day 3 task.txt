@@ -87,7 +87,7 @@ tasks3-1.js:50 Name3 is 28 years old
 Answer:
        let resume=[
     {
-     CarrerObjective:"Looking for a challenging role in a organization where i can utilize my knowledge and skills for growth       of an organization as well as to enhance my knowledge about new technologies.",
+     CarrerObjective:"Looking for a challenging role in a organization where i can utilize my knowledge and skills for growth of an organization as well as to enhance my knowledge about new technologies.",
      Education:"bachelor of technology in computer science engineering passed out in year 2019.",
      Projects:{
             project1:"descriptive analysis of tweets on gst.",
