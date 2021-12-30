@@ -1,0 +1,116 @@
+1.For a given JSON iterate over all the  for loops(for,for in,for of,foreach)?
+ Answer://not added the  html here
+      let obj=[
+    {
+        person:"maneesh",
+        age:20,
+        company:"Guvi"
+    },
+    {
+        person:"mani",
+        age:24,
+        company:"Guvi Geek"
+    },
+    {
+        person:"Name3",
+        age:28,
+        company:"Guvi Geek Network"
+    }
+];
+//iterating using for loop
+for( let i=0;i<obj.length;i++)
+{
+    //using backticks to print all the data in a single line
+    console.log(`${obj[i].person} is  ${obj[i].age} years old and  working in ${obj[i].company}`);
+    // to get names 
+     console.log(obj[i].person);
+}
+
+ //iterating using for in loop ,here details is the index
+ for(let details  in obj)
+ { //to get all the data
+   console.log(obj[details]);
+
+      //to get company names 
+    console.log(obj[details].company);
+ }
+ //iterating using for of loop
+ for(let data of obj)
+ { //to get all the data
+    console.log(data);
+
+     //to get the age
+  console.log(data.age);
+ }
+ //iterating using for each 
+ obj.forEach((element) =>
+     {
+         //to get all the data
+     console.log(element);
+
+     // using backticks to get the  required information
+     console.log(`${element.person} is ${element.age} years old`);
+
+ } );
+
+
+
+ OUTPUT://the output of above code is
+tasks3-1.js:22 maneesh is  20 years old and  working in Guvi
+tasks3-1.js:24 maneesh
+tasks3-1.js:22 mani is  24 years old and  working in Guvi Geek
+tasks3-1.js:24 mani
+tasks3-1.js:22 Name3 is  28 years old and  working in Guvi Geek Network
+tasks3-1.js:24 Name3
+tasks3-1.js:30 {person: 'maneesh', age: 20, company: 'Guvi'}
+tasks3-1.js:33 Guvi
+tasks3-1.js:30 {person: 'mani', age: 24, company: 'Guvi Geek'}
+tasks3-1.js:33 Guvi Geek
+tasks3-1.js:30 {person: 'Name3', age: 28, company: 'Guvi Geek Network'}
+tasks3-1.js:33 Guvi Geek Network
+tasks3-1.js:38 {person: 'maneesh', age: 20, company: 'Guvi'}
+tasks3-1.js:41 20
+tasks3-1.js:38 {person: 'mani', age: 24, company: 'Guvi Geek'}
+tasks3-1.js:41 24
+tasks3-1.js:38 {person: 'Name3', age: 28, company: 'Guvi Geek Network'}
+tasks3-1.js:41 28
+tasks3-1.js:47 {person: 'maneesh', age: 20, company: 'Guvi'}
+tasks3-1.js:50 maneesh is 20 years old
+tasks3-1.js:47 {person: 'mani', age: 24, company: 'Guvi Geek'}
+tasks3-1.js:50 mani is 24 years old
+tasks3-1.js:47 {person: 'Name3', age: 28, company: 'Guvi Geek Network'}
+tasks3-1.js:50 Name3 is 28 years old
+      
+
+2.Create your own resume in JSON format?
+
+Answer:
+       let resume=[
+    {
+     CarrerObjective:"Looking for a challenging role in a organization where i can utilize my knowledge and skills for growth       of an organization as well as to enhance my knowledge about new technologies.",
+     Education:"bachelor of technology in computer science engineering passed out in year 2019.",
+     Projects:{
+            project1:"descriptive analysis of tweets on gst.",
+            project2:"smart and safe blood banking."
+        },
+     Strengths:["quick learner","optimist"],
+     TechnicalSkills:["c","core java"],
+     hobbies:["listening music","web surfing"],
+     PersonalInformation:{
+            Name:"Maneesh",
+            age:24,
+            mail:"maneeshchikoti@gmail.com", 
+            mobileno:1234567890,
+            Address:{
+                HNO:"1-2-3",
+                Street:"big bazar",
+                district:"Medak",
+                Pincode:502110,
+                State:"Telangana"
+             }
+        }
+    }
+]
+
+        
+      
